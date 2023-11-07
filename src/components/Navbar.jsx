@@ -13,18 +13,20 @@ const Navbar = () => {
                 <Link className=" font-bold" to="/">Home</Link>
             </li>
             <li>
-                
-            </li>
-            {user && <>  <li>
-                {" "}
-                
-            </li>
-                <li>
-                    
-                </li> </>}
-            <li>
 
             </li>
+            {user && <>
+                <li>
+                    {" "}
+
+                </li>
+                <li>
+
+                </li>
+            </>}
+
+
+
         </>
     );
     const handleLogOut = () => {
