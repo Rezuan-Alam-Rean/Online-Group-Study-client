@@ -16,7 +16,7 @@ const Gallary = () => {
       data-aos="fade-down"
       data-aos-duration="1000"
     >
-      <h1 className="text-center font-extrabold text-5xl">Gallary</h1>
+      <h1 className="text-center font-extrabold text-5xl">Notes</h1>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, EffectCoverflow]}
         effect={"coverflow"}
