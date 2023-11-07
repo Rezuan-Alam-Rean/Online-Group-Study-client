@@ -3,7 +3,7 @@ const Subject = () => {
     return (
         <div className="mt-10 mb-10  ">
       <h1 className="text-center  text-5xl font-extrabold mt-10 mb-10">
-        Subjects
+         Notes
       </h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 ">
         <div className="card card-compact w-96 bg-base-100 shadow-xl mt-5 "
@@ -13,7 +13,7 @@ const Subject = () => {
         >
           <figure>
             <img className="h-64 w-full"
-              src="https://collegerealitycheck.com/wp-content/uploads/physics-major-1988419205-1024x768.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsgGiRDNr8icnT2_e0oy8EmCFcfrWaq7d_g&usqp=CAU"
               alt="Shoes"
             />
           </figure>
@@ -33,7 +33,7 @@ const Subject = () => {
         >
           <figure>
             <img className="h-64 w-full"
-              src="https://img.freepik.com/premium-photo/investigations-defunct-chemistry-facility-laboratory-chemistry-instruction_410516-4221.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXU9SUVat0Kl6Xt9pM_dIaLx4TEQezftvu0g&usqp=CAU"
               alt="Shoes"
             />
           </figure>
@@ -52,7 +52,7 @@ const Subject = () => {
         >
           <figure>
             <img className="h-64 w-full"
-              src="https://images.squarespace-cdn.com/content/v1/5fce63270356d927d7eecdbd/033e9988-2ac8-4cb9-8b9f-5bf05fb22dcb/gff.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVyyah8px-U3GuuUTYvYkVEWFPA69I0rX-w&usqp=CAU"
               alt="Shoes"
             />
           </figure>
