@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 const Footer = () => {
     return (
@@ -6,6 +7,8 @@ const Footer = () => {
             <div className="container bg-base-200 mx-auto py-6 px-4">
                 <div className="flex flex-wrap items-center justify-between">
                     <div className="flex items-center">
+                    <img src={logo} alt="Logo" className="h-20 w-20" />
+
                         <span className="ml-2 text-black text-lg font-semibold">Online group study</span>
 
                     </div>

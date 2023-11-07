@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../assets/logo.png"
 
 import { useContext } from "react";
 
@@ -72,6 +72,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
+                <img src={logo} style={{ width: "80px" }} />
 
 
 
