@@ -15,20 +15,22 @@ const Navbar = () => {
             <li>
                 <Link to="/Assignments">Assignments </Link>
             </li>
+            <li>
+                {" "}
+                <Link to="/CreateAssignment">Create Assignment </Link>
+            </li>
+
             {user && <>
-                <li>
-                    {" "}
-                    <Link to="/CreateAssignment">Create Assignment </Link>
-                </li>
+
                 <li>
                     <Link to="/SubmitAssignment">Submitted Assignment</Link>
 
                 </li>
+
                 <li>
                     <Link to="/MyAssignment">My Assignment</Link>
                 </li>
-                
-                
+
                 <li>
                     <Link to="/updatedAssignments">Updated Assignment</Link>
                 </li>
