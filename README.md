@@ -1,34 +1,35 @@
-# Website Name: Speedy-Racer-Toys
+# Online-Group-Study
 
-## Site Desciption
-Speedy-Racer-Toys offers a wide range of fun and age-appropriate racing toys and accessories that will ignite your child's imagination and provide hours of entertainment. From colorful and durable remote-controlled cars to track sets that allow them to create their own racing adventures, we have everything to make their racing dreams come true.We understand that safety is a top priority for parents, so we ensure that all our products meet the highest quality standards and are built with child-friendly features. Our collection includes easy-to-use and robust toys that are suitable for kids of different ages and skill levels.
+## Site Description
+Online-Group-Study offers a wide range of educational resources and assignments to support your learning needs. From a variety of study materials to assignment solutions that will help you excel in your academic pursuits, we have everything to make your studying experience more effective and enjoyable. We understand that learning is a top priority, so we ensure that all our products meet the highest quality standards and are designed to support your educational goals.
 
-## Tecnology
-I created this site by using vite , react router v6.10.0,tailwind and daisy UI.We also use folowing package:
-- **firebase**
+## Technology
+This website is built using the following technologies:
+
+- **React Router v6.10.0**
+- **Tailwind**
+- **Daisy UI**
+- **Firebase**
 - **React Icons**
-- **react-hook-form**
+- **React Hook Form**
 - **AOS**
-- **react-tabs**
-- **sweetalert2**
-- **@smastrom/react-rating**
-- **swiper**
+- **React Tabs**
+- **SweetAlert2**
 
-
+- **Swiper**
 
 ## Features
-- **Home**: Users can see amazing racing car toys for child.If user want to see toy details he can click view details to see its details information.User also see catagory wise toys in this page.
-- **Registation**:user can register for this account to get permission for all routes.
-- **Login**:These route registered user can login with their email and password.New user can go register page.If user want they can login with google .
-- **View Details**:This route is a dynamic route.And also it is privet route.Only registered user can go this route.If unregistered user want to go this route by clicking view details button they go the login page.When they logged in they will go this route.
-- **Blog**:In this route user can see 4 important question with ans with a download pdf functionality.
-- **All Toys**:User can see all toys in this route in a tabular form.
-- **My Toys**:Seller can see her added toys in this route.If seller want he can update or delete any toys.[Note:User have to login to add toy]
-- **Add A Toys**:Seller can add toys on this route.[Note:User have to login to add toy]
+- **Home**: Users can access a wide range of study materials and assignment solutions. If a user wants to see detailed information about an assignment, they can click "View Details" to access it. Users can also browse assignments categorized by subject.
+- **Registration**: Users can register for an account to access all the features and resources.
+- **Login**: Registered users can log in using their email and password. New users can go to the registration page. Users also have the option to log in using their Google account.
+- **View Details**: This route is a dynamic and private route. Only registered users can access it. If an unregistered user tries to access it by clicking "View Details," they will be redirected to the login page. Once logged in, they can access this route.
+- **Blog**: In this route, users can find answers to four important questions along with the option to download a PDF.
+- **All Assignments**: Users can browse all assignments in a tabular format.
+- **My Assignments**: Users can see the assignments they have added. If they wish, they can update or delete any assignments. [Note: Users must log in to add assignments.]
+- **Add an Assignment**: Users can add assignments to the website. [Note: Users must log in to add assignments.]
 
-## Live Site Link
+## Live Site Links
+- **Firebase Client Site Live Link**: 
+- **Server Site Link**: 
 
-  - **Firebase Client Site Live Link**: 
-
- - **vercel server  Site Link**: 
-            
+Please replace "Online-Group-Study," "toys," and "car" in your URLs with the appropriate names and terms you want to use in your documentation.
