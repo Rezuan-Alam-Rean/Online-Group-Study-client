@@ -40,7 +40,7 @@ const router = createBrowserRouter([
             {
                 path: '/home/:id',
                 element: <PrivetRoute><Details></Details></PrivetRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/assignment/home/${params.id}`)
+                loader: ({ params }) => fetch(`https://online-study-group-server.vercel.app/assignment/home/${params.id}`)
             },
             {
                 path: '/SubmitAssignment',
@@ -70,12 +70,12 @@ const router = createBrowserRouter([
             {
                 path: '/update/:id',
                 element: <Update></Update>,
-                loader: ({ params }) => fetch(`http://localhost:5000/assignment/home/${params.id}`)
+                loader: ({ params }) => fetch(`https://online-study-group-server.vercel.app/assignment/home/${params.id}`)
             },
             {
                 path: '/GiveMarks/:id',
                 element: <GiveMarks></GiveMarks>,
-                loader: ({ params }) => fetch(`http://localhost:5000/assignment/home/${params.id}`)
+                loader: ({ params }) => fetch(`https://online-study-group-server.vercel.app/assignment/home/${params.id}`)
             },
 
 

@@ -10,7 +10,7 @@ const UpdatedAssignment = () => {
   
 
   useEffect(() => {
-    fetch("http://localhost:5000/assignments")
+    fetch("https://online-study-group-server.vercel.app/assignments")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

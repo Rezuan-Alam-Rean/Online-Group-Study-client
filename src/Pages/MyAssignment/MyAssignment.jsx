@@ -13,7 +13,7 @@ const MyAssignment = () => {
   
  
   useEffect(() => {
-    fetch(`http://localhost:5000/myAssignments?email=${user?.email}`)
+    fetch(`https://online-study-group-server.vercel.app/myAssignments?email=${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setAssign(data);
@@ -24,7 +24,7 @@ const MyAssignment = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure ,you want to delete");
     if (proceed) {
-      fetch(`http://localhost:5000/delete/${id}`, {
+      fetch(`https://online-study-group-server.vercel.app/delete/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

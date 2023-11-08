@@ -15,7 +15,7 @@ const CreateAssignment = () => {
   const onSubmit = data => {
     const price = Number(data.price);
     data.price = price
-    fetch("http://localhost:5000/post", {
+    fetch("https://online-study-group-server.vercel.app/post", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

@@ -15,7 +15,7 @@ const GiveMarks = () => {
       
       const onSubmit = data => {
         console.log(data);
-        fetch(`http://localhost:5000/assignment/${_id}`, {
+        fetch(`https://online-study-group-server.vercel.app/assignment/${_id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

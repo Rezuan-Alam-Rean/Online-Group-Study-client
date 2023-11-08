@@ -30,6 +30,6 @@ This website is built using the following technologies:
 
 ## Live Site Links
 - **Firebase Client Site Live Link**: 
-- **Server Site Link**: 
+- **Server Site Link**:https://online-study-group-server.vercel.app/ 
 
 Please replace "Online-Group-Study," "toys," and "car" in your URLs with the appropriate names and terms you want to use in your documentation.
