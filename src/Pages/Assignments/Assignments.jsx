@@ -34,7 +34,7 @@ const Assignments = () => {
           
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{Ass.creatorName}</h2>
+            
             <h2 className="card-title">{Ass.title}</h2>
             <h2 className="card-title">{Ass.difficulty}</h2>
             <h2 className="card-title">Marks:{Ass.Marks}</h2>

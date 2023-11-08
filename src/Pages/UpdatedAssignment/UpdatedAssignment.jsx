@@ -56,7 +56,7 @@ const UpdatedAssignment = () => {
                       <td className="font-semibold text-center">{Ass.difficulty}</td> 
                       <td className="font-semibold text-center">${Ass.Marks}</td> 
                      
-                      <td className="text-center"><Link ><button className="btn btn-outline">View Details</button></Link></td>
+                      <td className="text-center"><Link to={`/home/${Ass._id}`}><button className="btn btn-outline">View Details</button></Link></td>
                     </tr>
           ))}
  

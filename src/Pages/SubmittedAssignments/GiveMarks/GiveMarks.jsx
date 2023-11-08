@@ -9,7 +9,7 @@ const GiveMarks = () => {
     const singleToy =useLoaderData()
     const location =useLocation()
     const navigate = useNavigate()
-    const from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname || "/Assignments";
     const {_id, photoUrl, title, Marks,  creatorName, creatorEmail, difficulty, description}=singleToy;
       const { register, handleSubmit, formState: { errors } } = useForm();
       
@@ -45,7 +45,7 @@ const GiveMarks = () => {
             <div className="card-body">
             <form onSubmit={handleSubmit(onSubmit)} >
                 {errors.exampleRequired && <span>This field is required</span>}
-                <h1 className="text-center font-extrabold mt-5 mb-5 text-3xl">Assignment creation</h1>
+                <h1 className="text-center font-extrabold mt-5 mb-5 text-3xl">Give marks</h1>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Photo URL</span>
@@ -105,7 +105,7 @@ const GiveMarks = () => {
 
                 </div>
                 <div className="form-control mt-5 w-48 m-auto">
-                  <button className="btn btn-success">Update</button>
+                  <button className="btn btn-error">Give marks</button>
                 </div>
               </form>
               </div>

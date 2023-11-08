@@ -25,7 +25,7 @@ const SubmittedAssignments = () => {
   return (
     <div>
       <h1 className="text-3xl font-extrabold text-center text-cyan-800 mt-5 mb-5">
-        Assignments You Added
+      Give marks
       </h1>
 
       <div className="mb-10">
@@ -79,7 +79,7 @@ const SubmittedAssignments = () => {
       </td>
       
       <th>
-       <Link to={`/GiveMarks/${Ass._id}`}> <button  className="btn  btn-sm">Give Marks</button></Link>
+       <Link to={`/GiveMarks/${Ass._id}`}> <button  className="btn btn-error btn-sm">Give Marks</button></Link>
       </th>
      
     </tr>

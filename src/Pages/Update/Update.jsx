@@ -9,7 +9,7 @@ const Update = () => {
   const singleToy = useLoaderData()
   const location = useLocation()
   const navigate = useNavigate()
-  const from = location.state?.from?.pathname || "/";
+  const from = location.state?.from?.pathname || "/Assignments";
   const { _id, photoUrl, title, Marks,  creatorName, creatorEmail, difficulty, description } = singleToy;
   const { register, handleSubmit, formState: { errors } } = useForm();
 
