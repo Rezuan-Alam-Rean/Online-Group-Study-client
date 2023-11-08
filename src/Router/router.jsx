@@ -10,6 +10,8 @@ import Update from "../Pages/Update/Update";
 import Details from "../Pages/Details/Details";
 import SubmittedAssignments from "../Pages/SubmittedAssignments/SubmittedAssignments";
 import UpdatedAssignment from "../Pages/UpdatedAssignment/UpdatedAssignment";
+import GiveMarks from "../Pages/SubmittedAssignments/GiveMarks/GiveMarks";
+
 
 const router = createBrowserRouter([
     {
@@ -62,6 +64,11 @@ const router = createBrowserRouter([
         {
             path:'/update/:id',
             element:<Update></Update>,
+            loader:({params})=>fetch(`http://localhost:5000/assignment/home/${params.id}`)
+          },
+        {
+            path:'/GiveMarks/:id',
+            element:<GiveMarks></GiveMarks>,
             loader:({params})=>fetch(`http://localhost:5000/assignment/home/${params.id}`)
           },
       

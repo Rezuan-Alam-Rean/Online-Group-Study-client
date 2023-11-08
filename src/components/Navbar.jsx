@@ -13,22 +13,24 @@ const Navbar = () => {
                 <Link className=" font-bold" to="/">Home</Link>
             </li>
             <li>
- <Link to="/Assignments">Assignments </Link>
+                <Link to="/Assignments">Assignments </Link>
             </li>
             {user && <>
                 <li>
                     {" "}
- <Link to="/SubmitAssignment">Create Assignment </Link>
-                </li>
-                <li>
-  <Link to="/MyAssignment">My Assignment</Link>
+                    <Link to="/CreateAssignment">Create Assignment </Link>
                 </li>
                 <li>
                     <Link to="/SubmitAssignment">Submitted Assignment</Link>
 
                 </li>
                 <li>
-               <Link to="/updatedAssignments">Updated Assignment</Link>
+                    <Link to="/MyAssignment">My Assignment</Link>
+                </li>
+                
+                
+                <li>
+                    <Link to="/updatedAssignments">Updated Assignment</Link>
                 </li>
             </>}
 

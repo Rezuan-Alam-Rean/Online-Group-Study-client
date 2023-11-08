@@ -1,68 +1,95 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
+
+
+
+import { AuthContext } from "../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
 
 const SubmittedAssignments = () => {
 
-
-  const [toys, setToys] = useState([]);
-
+  const [Assign, setAssign] = useState([]);
+  const { user } = useContext(AuthContext);
   
-
+ 
   useEffect(() => {
-    fetch("http://localhost:5000/assignments")
+    fetch(`http://localhost:5000/assignments`)
       .then((res) => res.json())
       .then((data) => {
+        setAssign(data);
         // console.log(data);
-        setToys(data);
       });
-  }, []);
-  // console.log(toys);
-  // search function
+  }, [user]);
+
 
   return (
     <div>
-        <h1 className="text-center text-3xl font-extrabold text-cyan-800 mb-5 mt-5">
-        All Toys
+      <h1 className="text-3xl font-extrabold text-center text-cyan-800 mt-5 mb-5">
+        Assignments You Added
       </h1>
- 
-    
- 
-  <div>
 
-  </div>
- 
-    <div className="overflow-x-auto mt-5 mb-5">
-    
+      <div className="mb-10">
+        
+      </div>
+
+      <div className="overflow-x-auto w-full">
+        <table className="table w-full">
+          {/* head */}
+          <thead>
+            <tr className="text-center">
+              <th>Index</th>
+              <th>Ass Info</th>
+              <th>creator Name</th>
+              <th>creator Email</th>
+              <th>give mark</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            {Assign.map((Ass, i) => (
+        
+
+              <tr className="text-center" key={Ass._id}>
+              <th>{i+1}</th> 
      
-      <table className="table table-compact w-full">
-        <thead className="text-center">
-          <tr>
-            <th></th>
-            <th>Seller</th>
-            <th>Toy Name</th>
-            <th>Sub Category</th>
-            <th>Price</th>
-            <th>Available Quantity</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          {toys.map((toy, i) => (
-                      <tr key={toy._id}>
-                      <th>{i}</th> 
-                      <td className="font-semibold text-center">{toy.sellerName}</td> 
-                      <td className="font-semibold text-center">{toy.toyName}</td> 
-                      <td className="font-semibold text-center">{toy.category}</td> 
-                      <td className="font-semibold text-center">${toy.price}</td> 
-                      <td className="font-semibold text-center">{toy.quantity}</td> 
-                      <td className="text-center"><Link ><button className="btn btn-outline">View Details</button></Link></td>
-                    </tr>
-          ))}
- 
-        </tbody>
-      </table>
-    </div>
+      <td  >
+        <div className="flex items-center space-x-3">
+          <div className="avatar">
+            <div className="mask mask-squircle w-12 h-12">
+              <img src={Ass.photoUrl} alt="Avatar Tailwind CSS Component" />
+            </div>
+          </div>
+          <div>
+            <div className="font-bold">title: {Ass.title}</div>
+            <div className="text-sm font-bold opacity-50">difficulty: {Ass.difficulty}</div>
+            <div className="text-sm font-bold opacity-50">Marks{Ass.Marks}</div>
+           
+          </div>
+        </div>
+      </td>
+      <td>
+        {Ass.creatorName}
+        <br/>
+        <span className="badge badge-ghost badge-sm">creator Name</span>
+      </td>
+      <td>
+        {Ass.creatorEmail}
+        <br/>
+        <span className="badge badge-ghost badge-sm">creator Email</span>
+      </td>
+      
+      <th>
+       <Link to={`/GiveMarks/${Ass._id}`}> <button  className="btn  btn-sm">Give Marks</button></Link>
+      </th>
+     
+    </tr>
+
+
+
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

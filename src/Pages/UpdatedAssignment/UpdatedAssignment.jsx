@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const UpdatedAssignment = () => {
 
 
-  const [toys, setToys] = useState([]);
+  const [Assign, setAssign] = useState([]);
 
   
 
@@ -14,16 +14,16 @@ const UpdatedAssignment = () => {
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
-        setToys(data);
+        setAssign(data);
       });
   }, []);
-  // console.log(toys);
+  // console.log(Assign);
   // search function
 
   return (
     <div>
         <h1 className="text-center text-3xl font-extrabold text-cyan-800 mb-5 mt-5">
-        All Toys
+        All Assign
       </h1>
  
     
@@ -39,23 +39,23 @@ const UpdatedAssignment = () => {
         <thead className="text-center">
           <tr>
             <th></th>
-            <th>Seller</th>
-            <th>Toy Name</th>
-            <th>Sub Category</th>
-            <th>Price</th>
-            <th>Available Quantity</th>
+            <th>creator Name</th>
+            <th>title</th>
+            <th>difficulty</th>
+            <th>Marks</th>
+           
             <th>Details</th>
           </tr>
         </thead>
         <tbody>
-          {toys.map((toy, i) => (
-                      <tr key={toy._id}>
+          {Assign.map((Ass, i) => (
+                      <tr key={Ass._id}>
                       <th>{i}</th> 
-                      <td className="font-semibold text-center">{toy.sellerName}</td> 
-                      <td className="font-semibold text-center">{toy.toyName}</td> 
-                      <td className="font-semibold text-center">{toy.category}</td> 
-                      <td className="font-semibold text-center">${toy.price}</td> 
-                      <td className="font-semibold text-center">{toy.quantity}</td> 
+                      <td className="font-semibold text-center">{Ass.creatorName}</td> 
+                      <td className="font-semibold text-center">{Ass.title}</td> 
+                      <td className="font-semibold text-center">{Ass.difficulty}</td> 
+                      <td className="font-semibold text-center">${Ass.Marks}</td> 
+                     
                       <td className="text-center"><Link ><button className="btn btn-outline">View Details</button></Link></td>
                     </tr>
           ))}

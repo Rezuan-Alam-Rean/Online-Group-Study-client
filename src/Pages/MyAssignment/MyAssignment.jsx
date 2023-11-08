@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const MyAssignment = () => {
 
-  const [toys, setToys] = useState([]);
+  const [Assign, setAssign] = useState([]);
   const { user } = useContext(AuthContext);
   
  
@@ -16,7 +16,7 @@ const MyAssignment = () => {
     fetch(`http://localhost:5000/myAssignments?email=${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
-        setToys(data);
+        setAssign(data);
         // console.log(data);
       });
   }, [user]);
@@ -37,12 +37,13 @@ const MyAssignment = () => {
               icon: "success",
               confirmButtonText: "Cool",
             });
-            const remaining = toys.filter((toy) => toy._id !== id);
-            setToys(remaining);
+            const remaining = Assign.filter((Ass) => Ass._id !== id);
+            setAssign(remaining);
           }
         });
     }
   };
+  console.log(Assign);
   return (
     <div>
       <h1 className="text-3xl font-extrabold text-center text-cyan-800 mt-5 mb-5">
@@ -59,51 +60,52 @@ const MyAssignment = () => {
           <thead>
             <tr className="text-center">
               <th>Index</th>
-              <th>Toy Info</th>
-              <th>Seller Name</th>
-              <th>Seller Email</th>
+              <th>Ass Info</th>
+              <th>creator Name</th>
+              <th>creator Email</th>
               <th>Update</th>
               <th>Delete</th>
             </tr>
           </thead>
           <tbody>
-            {toys.map((toy, i) => (
+            {Assign.map((Ass, i) => (
         
-
-              <tr className="text-center" key={toy._id}>
+              
+              <tr className="text-center" key={Ass._id}>
               <th>{i+1}</th> 
      
       <td  >
         <div className="flex items-center space-x-3">
           <div className="avatar">
             <div className="mask mask-squircle w-12 h-12">
-              <img src={toy.photoUrl} alt="Avatar Tailwind CSS Component" />
+              <img src={Ass.photoUrl} alt="Avatar Tailwind CSS Component" />
             </div>
           </div>
           <div>
-            <div className="font-bold">Name: {toy.toyName}</div>
-            <div className="text-sm font-bold opacity-50">Category: {toy.category}</div>
-            <div className="text-sm font-bold opacity-50">Price:${toy.price}</div>
-            <div className="text-sm font-bold opacity-50">Quantity: {toy.quantity}</div>
+           
+            <div className="font-bold">Name: {Ass.title}</div>
+            <div className="text-sm font-bold opacity-50">difficulty: {Ass.difficulty}</div>
+            <div className="text-sm font-bold opacity-50">Marks:{Ass.Marks}</div>
+            
           </div>
         </div>
       </td>
       <td>
-        {toy.sellerName}
+        {Ass.creatorName}
         <br/>
-        <span className="badge badge-ghost badge-sm">Seller</span>
+        <span className="badge badge-ghost badge-sm">creatorName</span>
       </td>
       <td>
-        {toy.sellerEmail}
+        {Ass.creatorEmail}
         <br/>
-        <span className="badge badge-ghost badge-sm">Seller</span>
+        <span className="badge badge-ghost badge-sm">creatorEmail</span>
       </td>
       
       <th>
-       <Link to={`/update/${toy._id}`}> <button  className="btn  btn-sm">Update</button></Link>
+       <Link to={`/update/${Ass._id}`}> <button  className="btn  btn-sm">Update</button></Link>
       </th>
       <th>
-       <button onClick={()=>handleDelete(toy._id)}  className="btn  btn-sm">Delete</button>
+       <button onClick={()=>handleDelete(Ass._id)}  className="btn  btn-sm">Delete</button>
       </th>
     </tr>
 
