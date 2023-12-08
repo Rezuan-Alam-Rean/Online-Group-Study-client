@@ -28,8 +28,6 @@ This website is built using the following technologies:
 - **My Assignments**: Users can see the assignments they have added. If they wish, they can update or delete any assignments. [Note: Users must log in to add assignments.]
 - **Add an Assignment**: Users can add assignments to the website. [Note: Users must log in to add assignments.]
 
-## Live Site Links
-- **Firebase Client Site Live Link**: 
-- **Server Site Link**:https://online-study-group-server.vercel.app/ 
+## Live Site Link
 
-Please replace "Online-Group-Study," "toys," and "car" in your URLs with the appropriate names and terms you want to use in your documentation.
+  - **Client Site Live Link**: https://b8a11-client-side-rezuan-alam-rean.vercel.app/
