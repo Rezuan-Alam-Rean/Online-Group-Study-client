@@ -30,4 +30,4 @@ This website is built using the following technologies:
 
 ## Live Site Link
 
-  - **Client Site Live Link**: https://b8a11-client-side-rezuan-alam-rean.vercel.app/
+  - **Client Site Live Link**: https://online-group-study-client.vercel.app/
