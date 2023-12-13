@@ -9,29 +9,29 @@ const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
     const navItems = (
         <>
-            <li>
+            <li className="text-orange-600 font-bold" >
                 <Link className=" font-bold" to="/">Home</Link>
             </li>
-            <li>
+            <li className="text-orange-600 font-bold">
                 <Link to="/Assignments">Assignments </Link>
             </li>
-            <li>
+                <li className="text-orange-600 font-bold">
+                    <Link to="/SubmitAssignment">Give Marks</Link>
+
+                </li>
+            <li className="text-orange-600 font-bold">
                 {" "}
                 <Link to="/CreateAssignment">Create Assignment </Link>
             </li>
 
             {user && <>
 
-                <li>
-                    <Link to="/SubmitAssignment">Submitted Assignment</Link>
 
-                </li>
-
-                <li>
+                <li className="text-orange-600 font-bold">
                     <Link to="/MyAssignment">My Assignment</Link>
                 </li>
 
-                <li>
+                <li className="text-orange-600 font-bold">
                     <Link to="/updatedAssignments">Updated Assignment</Link>
                 </li>
             </>}
