@@ -24,7 +24,7 @@ const Subject = () => {
 </p>
             </div>
 
-            <button className="btn btn-primary ">View Notes</button>
+            {/* <button className="btn btn-primary ">View Notes</button> */}
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl mt-5 "
@@ -43,7 +43,7 @@ const Subject = () => {
               <p>Chemistry is a branch of natural science that deals principally with the properties of substances, the changes they undergo.</p>
             </div>
 
-            <button className="btn btn-primary ">View Notes</button>
+            {/* <button className="btn btn-primary ">View Notes</button> */}
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl mt-5 "
@@ -62,7 +62,7 @@ const Subject = () => {
               <p>Software engineering is the branch of computer science that deals with the design, development, testing, and maintenance of software applications.</p>
             </div>
 
-            <button className="btn btn-primary ">View Notes</button>
+            {/* <button className="btn btn-primary ">View Notes</button> */}
           </div>
         </div>
       </div>

@@ -1,28 +1,32 @@
 
 const Banner = () => {
-    return (
-        <div className="bg-gradient-to-r from-cyan-800 to-white-600 py-16 px-4 mt-10 mb-10">
+  return (
+    <div className="">
+
+      <div className="flex flex-col w-full mt-5 lg:flex-row items-center justify-between " >
+        <div
+
+          className="md:w-1/2 px-5 ">
+          <h1 className=" md:text-6xl text-2xl  font-bold text-orange-400 mb-5  ">
+            Welcome To Online Group Study
+          </h1>
+          <p className="mt-3   text-base  ">
+            Students are spending countless hours online for classes this year, pushing educators to offer more engaging and worthwhile virtual content.
+          </p>
+        </div>
+
         <div>
-          <div className="flex flex-col lg:flex-row items-center justify-between " >
-            <div
-             
-             className="lg:w-1/2 overflow-x-hidden">
-              <h1 className="text-4xl  font-extrabold text-white  md:text-6xl">
-                Welcome to Online group study
-              </h1>
-              <p className="mt-3   text-xl text-white ">
-              Students are spending countless hours online for classes this year, pushing educators to offer more engaging and worthwhile virtual content.
-              </p>
-            </div>
-            <img
-              className="w-full  max-w-lg mt-10 lg:mt-0"
-              src="https://content.wolfram.com/sites/39/2020/11/Online-Enrichment-with-Free-Daily-Study-Groups.png"
-              alt=""
-            />
-          </div>
+
+          <img
+            className=" w-full "
+            src="https://media.istockphoto.com/id/1347747136/vector/group-of-students-studying.jpg?s=612x612&w=0&k=20&c=t8UwXDXTCu2O-2mOLE8_aQ7KTXxjuUk_WgiR0cS6pSk="
+            alt=""
+          />
         </div>
       </div>
-    );
+    </div>
+
+  );
 };
 
 export default Banner;

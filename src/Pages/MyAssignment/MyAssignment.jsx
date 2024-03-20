@@ -10,8 +10,8 @@ const MyAssignment = () => {
 
   const [Assign, setAssign] = useState([]);
   const { user } = useContext(AuthContext);
-  
- 
+
+
   useEffect(() => {
     fetch(`https://online-study-group-server.vercel.app/myAssignments?email=${user?.email}`)
       .then((res) => res.json())
@@ -51,7 +51,7 @@ const MyAssignment = () => {
       </h1>
 
       <div className="mb-10">
-        
+
       </div>
 
       <div className="overflow-x-auto w-full">
@@ -69,45 +69,45 @@ const MyAssignment = () => {
           </thead>
           <tbody>
             {Assign.map((Ass, i) => (
-        
-              
+
+
               <tr className="text-center" key={Ass._id}>
-              <th>{i+1}</th> 
-     
-      <td  >
-        <div className="flex items-center space-x-3">
-          <div className="avatar">
-            <div className="mask mask-squircle w-12 h-12">
-              <img src={Ass.photoUrl} alt="Avatar Tailwind CSS Component" />
-            </div>
-          </div>
-          <div>
-           
-            <div className="font-bold">Name: {Ass.title}</div>
-            <div className="text-sm font-bold opacity-50">difficulty: {Ass.difficulty}</div>
-            <div className="text-sm font-bold opacity-50">Marks:{Ass.Marks}</div>
-            
-          </div>
-        </div>
-      </td>
-      <td>
-        {Ass.creatorName}
-        <br/>
-        <span className="badge badge-ghost badge-sm">creatorName</span>
-      </td>
-      <td>
-        {Ass.creatorEmail}
-        <br/>
-        <span className="badge badge-ghost badge-sm">creatorEmail</span>
-      </td>
-      
-      <th>
-       <Link to={`/update/${Ass._id}`}> <button  className="btn  btn-sm">Update</button></Link>
-      </th>
-      <th>
-       <button onClick={()=>handleDelete(Ass._id)}  className="btn  btn-sm">Delete</button>
-      </th>
-    </tr>
+                <th>{i + 1}</th>
+
+                <td  >
+                  <div className="flex items-center space-x-3">
+                    <div className="avatar">
+                      <div className="mask mask-squircle w-12 h-12">
+                        <img src={Ass.photoUrl} alt="Avatar Tailwind CSS Component" />
+                      </div>
+                    </div>
+                    <div>
+
+                      <div className="font-bold">Name: {Ass.title}</div>
+                      <div className="text-sm font-bold opacity-50">difficulty: {Ass.difficulty}</div>
+                      <div className="text-sm font-bold opacity-50">Marks:{Ass.Marks}</div>
+
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  {Ass.creatorName}
+                  <br />
+                  <span className="badge badge-ghost badge-sm">creatorName</span>
+                </td>
+                <td>
+                  {Ass.creatorEmail}
+                  <br />
+                  <span className="badge badge-ghost badge-sm">creatorEmail</span>
+                </td>
+
+                <th>
+                  <Link to={`/update/${Ass._id}`}> <button className="btn  btn-sm">Update</button></Link>
+                </th>
+                <th>
+                  <button onClick={() => handleDelete(Ass._id)} className="btn  btn-sm">Delete</button>
+                </th>
+              </tr>
 
 
 

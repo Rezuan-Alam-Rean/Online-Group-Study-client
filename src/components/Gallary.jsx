@@ -16,7 +16,7 @@ const Gallary = () => {
                 data-aos="fade-down"
                 data-aos-duration="1000"
             >
-                <h1 className="text-center font-extrabold text-5xl">Subjects</h1>
+                <h1 className="text-center text-orange-400 font-bold text-4xl">Gallery</h1>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, EffectCoverflow]}
                     effect={"coverflow"}
@@ -39,7 +39,7 @@ const Gallary = () => {
                         <img
                             style={{ width: "100%" }}
                             className=""
-                            src="https://collegerealitycheck.com/wp-content/uploads/physics-major-1988419205-1024x768.jpg"
+                            src="https://img.freepik.com/premium-photo/investigations-defunct-chemistry-facility-laboratory-chemistry-instruction_410516-4221.jpg"
                             alt="First slide"
                         />
                     </SwiperSlide>
@@ -48,7 +48,7 @@ const Gallary = () => {
                         <img
                             style={{ width: "100%" }}
                             className=""
-                            src="https://img.freepik.com/premium-photo/investigations-defunct-chemistry-facility-laboratory-chemistry-instruction_410516-4221.jpg"
+                            src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="First slide"
                         />
                     </SwiperSlide>
@@ -69,7 +69,7 @@ const Gallary = () => {
                         <img
                             style={{ width: "100%" }}
                             className=""
-                            src="https://collegerealitycheck.com/wp-content/uploads/physics-major-1988419205-1024x768.jpg"
+                            src="https://img.freepik.com/premium-photo/investigations-defunct-chemistry-facility-laboratory-chemistry-instruction_410516-4221.jpg"
                             alt="First slide"
                         />
                     </SwiperSlide>

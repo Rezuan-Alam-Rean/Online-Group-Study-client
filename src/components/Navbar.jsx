@@ -9,17 +9,17 @@ const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
     const navItems = (
         <>
-            <li className="text-orange-600 font-bold" >
+            <li className="text-orange-400 font-bold" >
                 <Link className=" font-bold" to="/">Home</Link>
             </li>
-            <li className="text-orange-600 font-bold">
+            <li className="text-orange-400 font-bold">
                 <Link to="/Assignments">Assignments </Link>
             </li>
-                <li className="text-orange-600 font-bold">
+                <li className="text-orange-400 font-bold">
                     <Link to="/SubmitAssignment">Give Marks</Link>
 
                 </li>
-            <li className="text-orange-600 font-bold">
+            <li className="text-orange-400 font-bold">
                 {" "}
                 <Link to="/CreateAssignment">Create Assignment </Link>
             </li>
@@ -27,11 +27,11 @@ const Navbar = () => {
             {user && <>
 
 
-                <li className="text-orange-600 font-bold">
+                <li className="text-orange-400 font-bold">
                     <Link to="/MyAssignment">My Assignment</Link>
                 </li>
 
-                <li className="text-orange-600 font-bold">
+                <li className="text-orange-400 font-bold">
                     <Link to="/updatedAssignments">Updated Assignment</Link>
                 </li>
             </>}
@@ -55,7 +55,7 @@ const Navbar = () => {
             });
     };
     return (
-        <div className="navbar bg-base-200 h-28">
+        <div className="navbar bg-orange-50 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -83,7 +83,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <img src={logo} style={{ width: "80px" }} />
+                <img src={logo} style={{ width: "70px" }} />
 
 
 
@@ -100,8 +100,8 @@ const Navbar = () => {
                         <img style={{ width: "50px" }} className="w-50 rounded-full circle" src={user?.photoURL} />
                     </div>}
                 </label>
-                {user ? <button onClick={handleLogOut} className="btn">LogOut</button>
-                    : <Link to="/login" className="btn">Login</Link>}
+                {user ? <button onClick={handleLogOut} className="btn btn-outline text-orange-400 font-bold">LogOut</button>
+                    : <Link to="/login" className="btn btn-outline text-orange-400 font-bold">Login</Link>}
             </div>
         </div>
     );
