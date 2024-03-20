@@ -9,17 +9,17 @@ const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
     const navItems = (
         <>
-            <li className="text-orange-400 font-bold" >
+            <li className="text-white font-bold" >
                 <Link className=" font-bold" to="/">Home</Link>
             </li>
-            <li className="text-orange-400 font-bold">
+            <li className="text-white font-bold">
                 <Link to="/Assignments">Assignments </Link>
             </li>
-                <li className="text-orange-400 font-bold">
+                <li className="text-white font-bold">
                     <Link to="/SubmitAssignment">Give Marks</Link>
 
                 </li>
-            <li className="text-orange-400 font-bold">
+            <li className="text-white font-bold">
                 {" "}
                 <Link to="/CreateAssignment">Create Assignment </Link>
             </li>
@@ -27,11 +27,11 @@ const Navbar = () => {
             {user && <>
 
 
-                <li className="text-orange-400 font-bold">
+                <li className="text-white font-bold">
                     <Link to="/MyAssignment">My Assignment</Link>
                 </li>
 
-                <li className="text-orange-400 font-bold">
+                <li className="text-white font-bold">
                     <Link to="/updatedAssignments">Updated Assignment</Link>
                 </li>
             </>}
@@ -55,10 +55,10 @@ const Navbar = () => {
             });
     };
     return (
-        <div className="navbar bg-orange-50 ">
+        <div className="navbar   bg-orange-400 rounded-sm px-5 " >
             <div className="navbar-start">
-                <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                <div className="dropdown ">
+                    <label tabIndex={0} className="btn  btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -76,7 +76,7 @@ const Navbar = () => {
                     </label>
                     <ul
                         tabIndex={0}
-                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-orange-400 rounded-box w-52"
                     >
 
                         {navItems}
@@ -100,8 +100,8 @@ const Navbar = () => {
                         <img style={{ width: "50px" }} className="w-50 rounded-full circle" src={user?.photoURL} />
                     </div>}
                 </label>
-                {user ? <button onClick={handleLogOut} className="btn btn-outline text-orange-400 font-bold">LogOut</button>
-                    : <Link to="/login" className="btn btn-outline text-orange-400 font-bold">Login</Link>}
+                {user ? <button onClick={handleLogOut} className="btn btn-outline text-white font-bold">LogOut</button>
+                    : <Link to="/login" className="btn btn-outline text-white font-bold">Login</Link>}
             </div>
         </div>
     );

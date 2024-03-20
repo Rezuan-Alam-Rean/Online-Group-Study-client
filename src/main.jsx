@@ -10,7 +10,7 @@ import router from './Router/router'
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 
-  <div className="max-w-7xl mx-auto overflow-hidden">
+  <div className="max-w-7xl mx-auto overflow-hidden font-serif ">
     <React.StrictMode>
       <Toaster />
       <AuthProvider>

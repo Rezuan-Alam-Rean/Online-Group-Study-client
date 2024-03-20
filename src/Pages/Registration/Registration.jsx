@@ -103,7 +103,7 @@ const Registration = () => {
 
                             <div className="form-control mt-6">
 
-                                <input className="btn btn-primary" type="submit" value="Register" />
+                                <input className="btn btn-outline text-orange-400" type="submit" value="Register" />
                             </div>
                             <br />
                             <p className="text-green-600">

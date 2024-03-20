@@ -1,15 +1,15 @@
 
 const Subject = () => {
-    return (
-        <div className="mt-10 mb-10  ">
-      <h1 className="text-center  text-5xl font-extrabold mt-10 mb-10">
-         Notes
+  return (
+    <div className="mt-10 mb-10 flex flex-col  ">
+      <h1 className="text-center   text-4xl font-bold text-orange-400 mt-10 mb-10">
+        Subject
       </h1>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 ">
+      <div className="grid lg:grid-cols-3 gap-5 mx-auto sm:grid-cols-1  ">
         <div className="card card-compact w-96 bg-base-100 shadow-xl mt-5 "
-        
-        data-aos="fade-left"
-        data-aos-duration="1000"
+
+          data-aos="fade-left"
+          data-aos-duration="1000"
         >
           <figure>
             <img className="h-64 w-full"
@@ -21,7 +21,7 @@ const Subject = () => {
             <div className="text-center">
               <h2 className="font-extrabold text-center text-2xl">Physics</h2>
               <p>Physics is the natural science of matter, involving the study of matter, its fundamental constituents, its motion and behavior through space and time .
-</p>
+              </p>
             </div>
 
             {/* <button className="btn btn-primary ">View Notes</button> */}
@@ -67,7 +67,7 @@ const Subject = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Subject;

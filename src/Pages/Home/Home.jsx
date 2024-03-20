@@ -7,7 +7,7 @@ import Contact from "./contact/Contact";
 
 const Home = () => {
     return (
-        <div>
+        <div className="">
             <Banner></Banner>
             <Gallary></Gallary>
             <Contact/>
